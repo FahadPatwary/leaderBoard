@@ -171,3 +171,141 @@ footer p > a {
   color: #562eff;
 }
 /* Codes For Responsiveness  */
+@media only screen and (max-width: 688px) {
+  header {
+    display: none;
+  }
+
+  .top__players > h1,
+  .latest__courses > h1,
+  .top__blogs > h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #562eff;
+    margin-bottom: 35px;
+  }
+  /* Codes for top player section */
+  .container {
+    width: 100vw;
+    padding: 0;
+  }
+  .top__players {
+    margin: 5%;
+  }
+  .players {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 29px;
+    justify-items: center;
+  }
+  .player {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* code for top blog section  */
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+
+    justify-content: center;
+
+    margin: 5%;
+  }
+  .blog {
+    display: flex;
+    margin: 5%;
+    /* justify-content: center; */
+    flex-direction: column;
+  }
+  .blog img {
+    margin: auto;
+  }
+  .blog__data {
+    text-align: center;
+  }
+
+  /* for Course  */
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .top__blogs > h1 {
+    padding-top: 35px;
+  }
+  .course {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  /* hidden elements */
+  header {
+    display: none;
+  }
+  /* top player part  */
+  .top__players > h1,
+  .latest__courses > h1,
+  .top__blogs > h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #562eff;
+    margin-bottom: 35px;
+  }
+  /* Codes for top player section */
+  .container {
+    width: 80vw;
+    padding: 0;
+  }
+  .margin-left {
+    margin: 5%;
+  }
+  .players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 29px;
+    margin: 5%;
+  }
+  .player {
+    display: flex;
+    align-items: center;
+  }
+
+  /* code for top blog section  */
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+
+    justify-content: center;
+
+    margin: 5%;
+  }
+  .blog {
+    display: flex;
+    margin: 5%;
+    /* justify-content: center; */
+    flex-direction: column;
+  }
+  .top__blogs > h1 {
+    margin-left: 5%;
+  }
+  .blog img {
+    margin: auto;
+  }
+  .blog__data {
+    text-align: center;
+  }
+
+  /* for Course  */
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .top__blogs > h1 {
+    padding-top: 35px;
+  }
+  .course {
+    margin-bottom: 25px;
+  }
+}
