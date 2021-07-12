@@ -172,12 +172,19 @@ footer p > a {
   text-decoration: none;
   color: #562eff;
 }
+
 /* Codes For Responsiveness  */
 @media only screen and (max-width: 688px) {
-  header {
-    display: none;
+  .header__container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: 94px;
   }
 
+  .header__container nav {
+    display: none;
+  }
   .top__players > h1,
   .latest__courses > h1,
   .top__blogs > h1 {
@@ -242,9 +249,11 @@ footer p > a {
   }
 }
 @media only screen and (min-width: 688px) and (max-width: 992px) {
-  /* hidden elements */
-  header {
-    display: none;
+  .header__container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: 94px;
   }
   /* top player part  */
   .top__players > h1,
