@@ -14,7 +14,7 @@ body {
 header {
   display: flex;
   justify-content: center;
-  background-color: #562eff;
+  background-color: #fff72e;
 }
 .header__container {
   width: 870px;
@@ -31,6 +31,7 @@ header {
   margin-left: 15.58px;
   font-weight: 500;
   font-size: 24px;
+  color: black;
 }
 header .logo img {
   width: 40.42px;
@@ -45,10 +46,25 @@ nav {
   align-items: center;
 }
 nav a {
-  color: white;
+  color: black;
   text-decoration: none;
   margin-right: 36px;
+  font-weight: 500;
 }
+.hero__section {
+  width: 870px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__text {
+  width: 870px;
+  display: flex;
+  flex-direction: column;
+  justify-items: right;
+  margin-top: 12vmin;
+}
+
 /* Contaienr Section  */
 main {
   display: flex;
@@ -63,14 +79,17 @@ main {
   background-color: white;
   margin-top: 36px;
   border-radius: 5px;
+  margin-top: -100px;
+  margin-bottom: 150px;
 }
 .top__players > h1,
 .latest__courses > h1,
 .top__blogs > h1 {
+  text-align: center;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  color: #562eff;
+  color: #ffc014;
   margin-bottom: 35px;
 }
 .players {
@@ -110,6 +129,23 @@ main {
 .blog img {
   width: 177px;
   height: 117px;
+}
+.blog:first-child {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+.blog:first-child img {
+  width: 363.08px;
+  height: 240px;
+}
+.blog a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  width: 90px;
+  border-radius: 7px;
+  margin-top: 5px;
+  background-color: #ffdc50;
 }
 .blog__data {
   display: flex;
@@ -164,22 +200,38 @@ main {
 .duration i {
   margin-right: 3px;
 }
+.containerlast {
+  margin-bottom: 0px;
+}
 /* Some Styles for Footer  */
 footer p {
   margin: 50px;
 }
 footer p > a {
   text-decoration: none;
-  color: #562eff;
+  color: #ffc014;
 }
 
 /* Codes For Responsiveness  */
 @media only screen and (max-width: 688px) {
+  .blog:first-child img {
+    width: 100%;
+    height: 200px;
+  }
+  .blog__data a {
+    margin: auto;
+
+    margin-top: 10px;
+  }
+  .hero__section {
+    display: none;
+  }
   .header__container {
     width: 80%;
     display: flex;
     justify-content: space-between;
     height: 94px;
+    margin-bottom: 94px;
   }
 
   .header__container nav {
@@ -192,7 +244,7 @@ footer p > a {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    color: #562eff;
+
     margin-bottom: 35px;
   }
   /* Codes for top player section */
@@ -229,6 +281,7 @@ footer p > a {
     /* justify-content: center; */
     flex-direction: column;
   }
+
   .blog img {
     margin: auto;
   }
@@ -249,6 +302,19 @@ footer p > a {
   }
 }
 @media only screen and (min-width: 688px) and (max-width: 992px) {
+  .hero__section {
+    align-content: center;
+  }
+  .hero__text {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .blog__data a {
+    margin: auto;
+    margin-top: 10px;
+  }
   .header__container {
     width: 80%;
     display: flex;
@@ -262,7 +328,7 @@ footer p > a {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    color: #562eff;
+
     margin-bottom: 35px;
   }
   /* Codes for top player section */
@@ -270,9 +336,7 @@ footer p > a {
     width: 80vw;
     padding: 0;
   }
-  .margin-left {
-    margin: 5%;
-  }
+
   .players {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
